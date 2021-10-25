@@ -1,0 +1,12 @@
+/home/intern/projects/tmp/silpo/PrimeService/bin/Debug/net5.0/PrimeService.deps.json
+/home/intern/projects/tmp/silpo/PrimeService/bin/Debug/net5.0/PrimeService.dll
+/home/intern/projects/tmp/silpo/PrimeService/bin/Debug/net5.0/ref/PrimeService.dll
+/home/intern/projects/tmp/silpo/PrimeService/bin/Debug/net5.0/PrimeService.pdb
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.csproj.AssemblyReference.cache
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.GeneratedMSBuildEditorConfig.editorconfig
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.AssemblyInfoInputs.cache
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.AssemblyInfo.cs
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.csproj.CoreCompileInputs.cache
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.dll
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/ref/PrimeService.dll
+/home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.pdb
