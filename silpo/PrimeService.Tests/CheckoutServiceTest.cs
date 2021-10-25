@@ -2,7 +2,7 @@ using Xunit;
 using System;
 
 namespace PrimeService.Tests
-{
+{ 
     public class CheckoutServiceTest
     {
         [Fact]
@@ -16,18 +16,18 @@ namespace PrimeService.Tests
 
             Assert.Equal(check.getTotalCost(), 7);
         }
-        // [Fact]
-        // void closeCheck_withTwoProduct()
-        // {
-        //     CheckoutService checkoutService = new CheckoutService();
-        //     checkoutService.openCheck();
+        [Fact]
+        void closeCheck_withTwoProduct()
+        {
+            CheckoutService checkoutService = new CheckoutService();
+            checkoutService.openCheck();
 
-        //     checkoutService.addProduct(new Product(7, "Milk"));
-        //     checkoutService.addProduct(new Product(3, "Bred"));
-        //     Check check = checkoutService.closeCheck();
+            checkoutService.addProduct(new Product(7, "Milk"));
+            checkoutService.addProduct(new Product(3, "Bred"));
+            Check check = checkoutService.closeCheck();
 
-        //     Assert.Equal(check.getTotalCost(), 10);
-        // }
+            Assert.Equal(check.getTotalCost(), 10);
+        }
     }
 
 }
