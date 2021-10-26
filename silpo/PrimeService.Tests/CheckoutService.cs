@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace PrimeService.Tests
 {
+    
     public class CheckoutService
     {
         private Check check;
@@ -24,5 +25,6 @@ namespace PrimeService.Tests
             }
             return check;
         }
+        
     }
 }
