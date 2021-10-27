@@ -48,12 +48,35 @@ namespace PrimeService.Tests
         }
 
         [Fact]
-        void closeCheck__calcTotalPoints() { 
+        void closeCheck__calcTotalPoints()
+        {
             checkoutService.addProduct(milk_7);
             checkoutService.addProduct(bred_3);
             Check check = checkoutService.closeCheck();
 
             Assert.Equal(check.getTotalPoints(), 10);
+        }
+
+        [Fact]
+        void useOffer__addOfferPoints()
+        {
+            checkoutService.addProduct(milk_7);
+            checkoutService.addProduct(bred_3);
+
+            checkoutService.useOffer(new AnyGoodasOffer(6, 2));
+            Check check = checkoutService.closeCheck();
+
+            Assert.Equal(check.getTotalPoints(), 12);
+        }
+        [Fact]
+        void useOffer__whenCostLessThanRequired__doNothing()
+        {
+            checkoutService.addProduct(bred_3);
+
+            checkoutService.useOffer(new AnyGoodasOffer(6, 2));
+            Check check = checkoutService.closeCheck();
+
+            Assert.Equal(check.getTotalPoints(), 3);
         }
     }
 

@@ -7,6 +7,7 @@ namespace PrimeService.Tests
     {
         public List<Product> products;
         public int totalCost;
+        private int points = 0;
         public int getTotalCost()
         {
             int totalCost = 0; 
@@ -16,7 +17,10 @@ namespace PrimeService.Tests
             return totalCost;
         }
         public int getTotalPoints(){
-            return getTotalCost();
+            return getTotalCost() + points;
+        }
+        private void addPoints(int points){
+            this.points += points;
         }
     }
 }

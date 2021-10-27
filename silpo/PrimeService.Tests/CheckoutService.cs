@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PrimeService.Tests
 {
-    
+
     public class CheckoutService
     {
         private Check check;
@@ -19,12 +19,16 @@ namespace PrimeService.Tests
         }
         public Check closeCheck()
         {
-            foreach(Product product in check.products)
+            foreach (Product product in check.products)
             {
                 check.totalCost += product.price;
             }
             return check;
         }
-        
+        public void useOffer(AnyGoodasOffer offer)
+        {
+            if (offer.totalCost <= check.getTotalCost())
+                check.addPoints(offer.points);
+        }
     }
 }
