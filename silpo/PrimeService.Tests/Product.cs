@@ -7,11 +7,13 @@ namespace PrimeService.Tests
         public int price;
         public string name;
         public Category category;
-        public int GetPrice() {
+        public int GetPrice()
+        {
             return price;
         }
 
-        public Category getCategory() {
+        public Category getCategory()
+        {
             return category;
         }
         public Product(int price, string name, Category category)
@@ -20,8 +22,10 @@ namespace PrimeService.Tests
             this.name = name;
             this.category = category;
         }
-        public Product(int price, string name){
-            this(price, name, null);
+        public Product(int price, string name)
+        {
+            this.price =price;
+            this.name = name;
         }
     }
 }
