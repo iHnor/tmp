@@ -79,7 +79,7 @@ namespace PrimeService.Tests
             checkoutService.addProduct(new Product(7, "Milk", Category.MILK));
             checkoutService.addProduct(new Product(3, "Bread", Category.Bread));
 
-            checkoutService.useOffer(new AnyGoodasOffer(6, 2));
+            checkoutService.useOffer(new AnyGoodsOffer(6, 2));
             Check check = checkoutService.closeCheck();
 
             Assert.Equal(check.getTotalPoints(), 12);
@@ -91,9 +91,9 @@ namespace PrimeService.Tests
             checkoutService.openCheck();
 
             checkoutService.addProduct(new Product(3, "Bread", Category.Bread));
-            checkoutService.useOffer(new AnyGoodasOffer(6, 2));
+            checkoutService.useOffer(new AnyGoodsOffer(6, 2));
             Check check = checkoutService.closeCheck();
-            Assert.Equal(check.getTotalPoints(), 5);
+            Assert.Equal(check.getTotalPoints(), 3);
         }
         [Fact]
         void useOffer__factorByCategory()
@@ -105,11 +105,30 @@ namespace PrimeService.Tests
             checkoutService.addProduct(new Product(7, "Milk", Category.MILK));
             checkoutService.addProduct(new Product(3, "Bread", Category.Bread));
 
+
             checkoutService.useOffer(new FactorByCategoryOffer(Category.MILK, 2));
             Check check = checkoutService.closeCheck();
 
             Assert.Equal(check.getTotalPoints(), 31);
         }
+
+        [Fact]
+        void expiration__check()
+        {
+            FactorByCategoryOffer checkDate = new FactorByCategoryOffer(Category.MILK, 2);
+
+            Assert.Equal(checkDate.checkExpiration(), true);
+        }
+        [Fact]
+        void endExpiration()
+        {
+            FactorByCategoryOffer checkDate = new FactorByCategoryOffer(Category.MILK, 2);
+            checkDate.setExpirationDate(DateTime.Now.AddYears(-1));
+
+            Assert.Equal(checkDate.checkExpiration(), false);
+        }
     }
+
+
 
 }

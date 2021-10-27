@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace PrimeService.Tests
 {
-    public class AnyGoodasOffer : Offer
+    public class AnyGoodsOffer : Offer
     {
         public int totalCost;
         public int points;
-        public AnyGoodasOffer(int totalcost, int points)
+        public AnyGoodsOffer(int totalCost, int points)
         {
             this.totalCost = totalCost;
             this.points = points;

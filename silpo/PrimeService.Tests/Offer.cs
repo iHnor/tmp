@@ -2,13 +2,23 @@ using System;
 
 namespace PrimeService.Tests
 {
-    public abstract class Offer {
-        public void apply(Check check){
-            if(checkCondition(check)){
+    public abstract class Offer
+    {
+        DateTime expirationDate = DateTime.Now.AddYears(1);
+        public void setExpirationDate(DateTime expiration)
+        {
+            this.expirationDate = expiration;
+        }
+        
+        public void apply(Check check)
+        {
+            if (checkCondition(check) && checkExpiration())
+            {
                 check.addPoints(calculatePoints(check));
             }
         }
-        protected virtual int calculatePoints(Check check) {
+        protected virtual int calculatePoints(Check check)
+        {
             return check.getTotalCost();
         }
 
@@ -16,6 +26,9 @@ namespace PrimeService.Tests
         {
             return true;
         }
-        
+
+        public bool checkExpiration(){
+            return DateTime.Now < expirationDate;
+        }
     }
 }
