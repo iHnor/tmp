@@ -27,8 +27,18 @@ namespace PrimeService.Tests
         }
         public void useOffer(AnyGoodasOffer offer)
         {
-            if (offer.totalCost <= check.getTotalCost())
+       /*      if (offer.totalCost <= check.getTotalCost())
                 check.addPoints(offer.points);
+ */
+            if (typeof(offer).IsInstanceOfType(FactorByCategoryOffer))
+            {
+                FactorByCategoryOffer fbOffer = (FactorByCategoryOffer) offer;
+                int points = check.getCostByCategory(fbOffer.categoryl);
+                check.addPoints(points * (fbOffer.factor - 1));
+            } else {
+                if(offer.totalCost <= check.getTotalCost())
+                    check.addPoints(offer.points);
+            }
         }
     }
 }

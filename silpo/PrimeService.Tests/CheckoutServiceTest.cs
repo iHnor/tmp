@@ -13,7 +13,7 @@ namespace PrimeService.Tests
             CheckoutService checkoutService = new CheckoutService();
             checkoutService.openCheck();
 
-            milk_7 = new Product(7, "Milk");
+            milk_7 = new Product(7, "Milk", Category.MILK);
             bred_3 = new Product(3, "Bread");
         }
 
@@ -77,6 +77,18 @@ namespace PrimeService.Tests
             Check check = checkoutService.closeCheck();
 
             Assert.Equal(check.getTotalPoints(), 3);
+        }
+        [Fact]
+        void useOffer__factorByCategory()
+        {
+            checkoutService.addProduct(milk_7);
+            checkoutService.addProduct(milk_7);
+            checkoutService.addProduct(bred_3);
+
+            checkoutService.useOffer(new FactorByCategoryOffer(Category.MILK, 2));
+            Check check = checkoutService.closeCheck();
+
+            Assert.Equal(check.getTotalPoints(), 31);
         }
     }
 
