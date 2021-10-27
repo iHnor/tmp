@@ -25,19 +25,23 @@ namespace PrimeService.Tests
             }
             return check;
         }
-        public void useOffer(AnyGoodasOffer offer)
+        public void useOffer(Offer offer)
         {
-       /*      if (offer.totalCost <= check.getTotalCost())
-                check.addPoints(offer.points);
- */
+            offer.apply(check);
             if (typeof(offer).IsInstanceOfType(FactorByCategoryOffer))
             {
-                FactorByCategoryOffer fbOffer = (FactorByCategoryOffer) offer;
+                FactorByCategoryOffer fbOffer = (FactorByCategoryOffer)offer;
                 int points = check.getCostByCategory(fbOffer.categoryl);
                 check.addPoints(points * (fbOffer.factor - 1));
-            } else {
-                if(offer.totalCost <= check.getTotalCost())
-                    check.addPoints(offer.points);
+            }
+            else
+            {
+                if (typeof(offer).IsInstanceOfType(AnyGoodasOffer)){
+                    AnyGoodasOffer agOffer = (AnyGoodasOffer) offer;
+                    if (agOffer.totalCost <= check.getTotalCost())
+                        check.addPoints(agOffer.points);
+                }
+                    
             }
         }
     }

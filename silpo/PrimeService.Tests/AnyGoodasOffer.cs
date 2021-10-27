@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PrimeService.Tests
 {
-    public class AnyGoodasOffer
+    public class AnyGoodasOffer : Offer
     {
         public int totalCost;
         public int points;
@@ -11,6 +11,15 @@ namespace PrimeService.Tests
         {
             this.totalCost = totalCost;
             this.points = points;
+        }
+        protected override int calculatePoints(Check check)
+        {
+            return points;
+        }
+
+        protected override bool checkCondition(Check check)
+        {
+            return totalCost <= check.getTotalCost();
         }
     }
 }
