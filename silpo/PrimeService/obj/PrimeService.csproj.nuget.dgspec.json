@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/intern/projects/tmp/silpo/PrimeService/PrimeService.csproj": {}
+    "/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/PrimeService.csproj": {}
   },
   "projects": {
-    "/home/intern/projects/tmp/silpo/PrimeService/PrimeService.csproj": {
+    "/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/PrimeService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/intern/projects/tmp/silpo/PrimeService/PrimeService.csproj",
+        "projectUniqueName": "/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/PrimeService.csproj",
         "projectName": "PrimeService",
-        "projectPath": "/home/intern/projects/tmp/silpo/PrimeService/PrimeService.csproj",
-        "packagesPath": "/home/intern/.nuget/packages/",
-        "outputPath": "/home/intern/projects/tmp/silpo/PrimeService/obj/",
+        "projectPath": "/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/PrimeService.csproj",
+        "packagesPath": "/home/bookadmin/.nuget/packages/",
+        "outputPath": "/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/intern/.nuget/NuGet/NuGet.Config"
+          "/home/bookadmin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

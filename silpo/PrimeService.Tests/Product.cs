@@ -7,6 +7,13 @@ namespace PrimeService.Tests
         public int price;
         public string name;
         public Category category;
+        public int GetPrice() {
+            return price;
+        }
+
+        public Category getCategory() {
+            return category;
+        }
         public Product(int price, string name, Category category)
         {
             this.price = price;

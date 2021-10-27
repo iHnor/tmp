@@ -6,6 +6,13 @@ namespace PrimeService.Tests
     {
         public Category category;
         public int factor;
+        public Category GetCategory () {
+            return category;
+        }
+
+        public int GetFactor() {
+            return factor;
+        }
         public FactorByCategoryOffer(Category category, int factor)
         {
             this.category = category;

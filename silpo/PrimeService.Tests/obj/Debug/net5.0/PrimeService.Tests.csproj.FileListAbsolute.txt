@@ -100,3 +100,12 @@
 /home/intern/projects/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/ref/PrimeService.Tests.dll
 /home/intern/projects/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.pdb
 /home/intern/projects/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.genruntimeconfig.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/bin/Debug/net5.0/CoverletSourceRootsMapping
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.csproj.AssemblyReference.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.AssemblyInfoInputs.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.AssemblyInfo.cs
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.csproj.CoreCompileInputs.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.dll
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/ref/PrimeService.Tests.dll
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService.Tests/obj/Debug/net5.0/PrimeService.Tests.pdb

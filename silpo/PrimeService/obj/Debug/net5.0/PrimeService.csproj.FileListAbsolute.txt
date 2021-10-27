@@ -10,3 +10,15 @@
 /home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.dll
 /home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/ref/PrimeService.dll
 /home/intern/projects/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.pdb
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/bin/Debug/net5.0/PrimeService.deps.json
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/bin/Debug/net5.0/PrimeService.dll
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/bin/Debug/net5.0/ref/PrimeService.dll
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/bin/Debug/net5.0/PrimeService.pdb
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.csproj.AssemblyReference.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.GeneratedMSBuildEditorConfig.editorconfig
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.AssemblyInfoInputs.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.AssemblyInfo.cs
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.csproj.CoreCompileInputs.cache
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.dll
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/ref/PrimeService.dll
+/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/obj/Debug/net5.0/PrimeService.pdb

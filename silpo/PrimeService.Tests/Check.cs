@@ -8,6 +8,10 @@ namespace PrimeService.Tests
         public List<Product> products;
         public int totalCost;
         private int points = 0;
+        public Check()
+        {
+            this.products = new List<Product>();
+        }
         public int getTotalCost()
         {
             int totalCost = 0;
@@ -21,10 +25,22 @@ namespace PrimeService.Tests
         {
             return getTotalCost() + points;
         }
+
+        public List<Product> getProducts()
+        {
+            return products;
+        }
+
         public void addPoints(int points)
         {
             this.points += points;
         }
+
+        public void addProduct(Product product)
+        {
+            products.Add(product);
+        }
+
         public int getCostByCategory(Category category)
         {
             int output = 0;
@@ -36,6 +52,21 @@ namespace PrimeService.Tests
                 }
             }
             return output;
+        }
+        public int getCount() {
+            return products.Count;
+        }
+
+        public int getCostByProduct(Product product) {
+            int cost = 0;
+            foreach (Product p in products)
+            {
+                if (product == p)
+                {
+                    cost += product.GetPrice();
+                }
+            }
+            return cost;
         }
     }
 }

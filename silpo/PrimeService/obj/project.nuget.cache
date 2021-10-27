@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oGyHqQRngLLT/JUayky5dRmjGwhp96sCY25VRr2NjXpykMTDHBJj84C+0+5cpI6ih09X5ezKHKYz+hfc0nvn7w==",
+  "dgSpecHash": "FhiN7cmDHMyTeNB443jJi/EHlpqEjptxCs6XNFS5ZZ2OX+FTlhf+Z0bDuD0lub/xwJFU5hcwVJOiilT7YHaNxQ==",
   "success": true,
-  "projectFilePath": "/home/intern/projects/tmp/silpo/PrimeService/PrimeService.csproj",
+  "projectFilePath": "/home/bookadmin/projects/InCamp22/tmp/silpo/PrimeService/PrimeService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
